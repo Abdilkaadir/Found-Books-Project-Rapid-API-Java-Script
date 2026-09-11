@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  #search-form {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  #search-input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  #search-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #0B2A4A;
+    color: white;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+  }
+  
+  #search-form button:hover {
+    background-color: #16406A;
+  }
+  
+  /* Book List */
+  #book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+
+
+/* Book Card */
+.book-card {
+  width: 180px;
+  margin: 15px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.no-cover {
+  width: 100%;
+  height: 240px;
+  background: #e0e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.book-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-info h3 {
+  font-size: 13px;
+  color: #0B2A4A;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.book-info p {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+.book-info a {
+  font-size: 12px;
+  color: #16406A;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.book-info a:hover {
+  text-decoration: underline;
+}
